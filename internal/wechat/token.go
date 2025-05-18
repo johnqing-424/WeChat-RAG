@@ -13,6 +13,7 @@ const (
 	TokenURL  = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s "
 	AppID     = "wx39fc841a05350758"               // 替换为你的 AppID
 	AppSecret = "8280c222717449b5147b5cd9db7bbcda" // 替换为你的 AppSecret
+	Token     = "wechat_rag_token"                 // 微信服务器验证使用的Token，需与公众号后台设置一致
 )
 
 var (

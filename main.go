@@ -15,7 +15,7 @@ func main() {
 	r.POST("/wechat", wechat.HandleWeChatMessage)
 
 	// 启动 Gin Web 服务
-	if err := r.Run(":8000"); err != nil {
+	if err := r.Run(":80"); err != nil {
 		panic(err)
 	}
 }

@@ -1,0 +1,7 @@
+<xml>
+<ToUserName><![CDATA[test_user_123]]></ToUserName>
+<FromUserName><![CDATA[gh_123456789abc]]></FromUserName>
+<CreateTime>1747542842</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[您的问题正在处理中，可稍后发送 /status 查询结果。]]></Content>
+</xml>
