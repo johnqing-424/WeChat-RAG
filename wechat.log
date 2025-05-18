@@ -9,15 +9,3 @@
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :80
-[GIN] 2025/05/18 - 12:41:28 | 404 |         528ns |      65.49.1.70 | GET      "/favicon.ico"
-[GIN] 2025/05/18 - 12:41:59 | 404 |         930ns |  35.190.205.136 | GET      "/"
-[GIN] 2025/05/18 - 12:42:07 | 404 |         533ns |      65.49.1.68 | GET      "/geoserver/web/"
-[GIN] 2025/05/18 - 12:45:29 | 404 |         446ns | 194.145.227.125 | GET      "/elfinder/php/connector.php"
-[GIN] 2025/05/18 - 12:48:15 | 404 |         905ns |   68.65.122.143 | GET      "/"
-[GIN] 2025/05/18 - 12:51:45 | 404 |         413ns |  221.216.41.155 | GET      "/"
-[GIN] 2025/05/18 - 12:51:45 | 404 |         620ns |  221.216.41.155 | GET      "/"
-[GIN] 2025/05/18 - 12:51:46 | 404 |         466ns |  221.216.41.155 | GET      "/"
-[GIN] 2025/05/18 - 12:51:46 | 404 |         682ns |  221.216.41.155 | GET      "/"
-[GIN] 2025/05/18 - 12:51:47 | 404 |       1.236µs |  221.216.41.155 | GET      "/"
-[GIN] 2025/05/18 - 12:52:07 | 404 |         463ns |  119.112.93.122 | GET      "/"
-[GIN] 2025/05/18 - 13:05:38 | 404 |         597ns |   141.98.11.147 | GET      "/"

@@ -2,7 +2,10 @@ module github.com/johnqing-424/WeChat-RAG
 
 go 1.24.3
 
-require github.com/gin-gonic/gin v1.10.0
+require (
+	github.com/gin-gonic/gin v1.10.0
+	gopkg.in/yaml.v2 v2.4.0
+)
 
 require (
 	github.com/bytedance/sonic v1.13.2 // indirect

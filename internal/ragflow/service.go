@@ -9,21 +9,20 @@ import (
 	"net/http"
 	"sync"
 	"time"
+
+	"github.com/johnqing-424/WeChat-RAG/internal/config"
 )
 
-const (
-	RagFlowBaseURL = "http://ragflow-server" // 使用Docker内部容器名称
-	ApiKey         = "ragflow-cwNWNkZGFhMzMxNzExZjA5MmM5MDI0Mj"
-	ChatID         = "5e48a6dc331a11f0af0302420aff0606" // 替换为你的 Chat ID
-	DatasetID      = "7b214898331711f09ded02420aff0606" // 如果需要指定 dataset
-	// API请求重试次数和超时设置
-	MaxRetries    = 2
-	RetryInterval = 1 * time.Second
-)
-
-// 可配置变量
+// 全局配置变量
 var (
-	RequestTimeout = 120 * time.Second // 从30秒增加到120秒
+	cfg            = config.GetConfig()
+	RagFlowBaseURL = cfg.RagFlow.BaseURL
+	ApiKey         = cfg.RagFlow.ApiKey
+	ChatID         = cfg.RagFlow.ChatID
+	DatasetID      = cfg.RagFlow.DatasetID
+	MaxRetries     = cfg.RagFlow.MaxRetries
+	RetryInterval  = time.Duration(cfg.RagFlow.RetryInterval) * time.Second
+	RequestTimeout = time.Duration(cfg.RagFlow.RequestTimeout) * time.Second
 )
 
 type Chunk struct {

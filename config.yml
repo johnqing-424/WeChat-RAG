@@ -1,0 +1,20 @@
+# WeChat配置
+wechat:
+  app_id: "wx39fc841a05350758" 
+  app_secret: "8280c222717449b5147b5cd9db7bbcda"
+  token: "wechat_rag_token"
+  token_url: "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s"
+
+# RAGFlow服务配置
+ragflow:
+  base_url: "http://ragflow-server"
+  api_key: "ragflow-cwNWNkZGFhMzMxNzExZjA5MmM5MDI0Mj"
+  chat_id: "5e48a6dc331a11f0af0302420aff0606"
+  dataset_id: "7b214898331711f09ded02420aff0606"
+  max_retries: 2
+  retry_interval: 1 # 秒
+  request_timeout: 120 # 秒
+
+# 服务器配置
+server:
+  port: 80
